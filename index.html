@@ -1,89 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
+<style>
+  .link1:hover{
+    color: orange;
+  }
   
-  <body>
+  .heading1{
+    font-size: larger;
+    font-weight: bold;
+    transition: color 0.2s
+  }
 
-    <header class="header">
-      <a href="#home" class="logo">
-        Enrico <span>Patras</span>
-      </a>
+  .heading2{
+    font-weight: bold;
+    color: green;
+  }
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+  .add-cart-button{
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 5px;
+    border-radius: 20px;
+    transition: 0.15s;
+  }
 
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  .add-cart-button:hover{
+    opacity: 0.8;
+  }
 
-      <button class="gradient-button">
-        Contact Me
-      </button>
-    </header>
-    
-    <section class="home" id="home">
-  <div class="home-content">
-    <h1>It's a Me, <span>Enrico Patras</span></h1>
+  .add-cart-button:active{
+    opacity: 0.5;
+  }
 
-    <h3>I'm a <span class="typing">Cyber Security</span></h3>
+  .buy-now-button{
+    background-color: orange;
+    color: black;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-right: 5px;
+    border-radius: 20px;
+    transition: 0.15s;
+  }
 
-    <p>
-      I am a Cyber Security student at Binus University. I am passionate about
-      technology and love to learn new things. I am also interested in Blue
-      Team.
-    </p>
+  .buy-now-button:hover{
+    opacity: 0.8;
+  }
 
-    <div class="social-icons">
-      <a href="#" class="button">
-        <i class="bx bxl-github"></i>
-      </a>
+  .buy-now-button:active{
+    opacity: 0.5;
+  }
 
-      <a href="#" class="button">
-        <i class="bx bxl-linkedin-square"></i>
-      </a>
+  .page_link{
+    margin-left: 5px;
+  }
 
-      <a href="#" class="button">
-        <i class="bx bxl-instagram-alt"></i>
-      </a>
+  .page_redge{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
-      <a href="cv.pdf" class="button">CV</a>
-    </div>
+  .stretchy{
+    color: white;
+    background-color: green;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: padding 1.5s;
+    vertical-align: top;
+  }
 
-    <div class="button-group">
-      <a href="#" class="button">Hire</a>
-      <a href="#contact" class="button">Contact</a>
-    </div>
-  </div> <div class="home-img">
-    <img src="image.jpg" alt="A photo of Enrico Patras" />
-  </div>
-</section>
+  .stretchy:hover{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-<section class="about" id="about">
+  .shadow{
+    color: white;
+    background-color: green;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+    /* transition: margin-top s, margin-left 0.15s; */
+    margin-right: 5px;
+  }
 
-  <div class="about-img">
-    <img src="image.jpg" alt="">
-  </div>
+  .shadow:active{
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    vertical-align: top;
+  }
 
-  <div class="about-content">
-    <h2>About <span>Me</span></h2>
-    <p>I am Inevitable</p>
-    <a href="#" class="button">Read More</a>
-  </div>
-  
-</section>
+  .number{
+    color: white;
+    background-color: green;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: padding 0.15s, margin 0.15s;
+  }
 
-    <script src="script.js"></script>
-  </body>
-</html>
+  .number:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    vertical-align: top;
+  }
+</style>
+
+<a href="exercise2.html" class="link1">
+  Back to exercise2
+</a>
+
+<p class="heading1">
+  Nike Black Running Shoes
+</p>
+
+<p class="heading2">
+  $39 - in stock.
+</p>
+
+<p>
+  Free delivery tomorrow.
+</p>
+
+<button class="add-cart-button">
+  Add to Cart
+</button>
+
+<button class="buy-now-button">
+  Buy now
+</button>
+
+<br><br>
+
+<button>
+  Back
+</button>
+
+<a href="index.html" class="page_link">
+  1
+</a>
+
+<a href="exercise.html" class="page_link">
+  2
+</a>
+
+<a href="exercise2.html" class="page_link">
+  3
+</a>
+
+<a href="buttons.html" class="page_link">
+  4
+</a>
+
+<a href="lol.html" class="page_redge">
+  5
+</a>
+
+<button>
+  Next
+</button>
+
+  <br><br>
+
+<button class="stretchy">
+  stretch
+</button>
+
+<button class="shadow">
+  shadow
+</button>
+
+<br><br>
+
+<button class="number">
+  one
+</button>
+
+<button class="number">
+  two
+</button>
+
+<button class="number">
+  three
+</button>
