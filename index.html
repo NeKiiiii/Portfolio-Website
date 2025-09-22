@@ -1,205 +1,126 @@
-<style>
-  .link1:hover{
-    color: orange;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
   
-  .heading1{
-    font-size: larger;
-    font-weight: bold;
-    transition: color 0.2s
-  }
+  <body>
 
-  .heading2{
-    font-weight: bold;
-    color: green;
-  }
+    <header class="header">
+      <a href="#home" class="logo">
+        Enrico <span>Patras</span>
+      </a>
 
-  .add-cart-button{
-    background-color: yellow;
-    color: black;
-    border: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-right: 5px;
-    border-radius: 20px;
-    transition: 0.15s;
-  }
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-  .add-cart-button:hover{
-    opacity: 0.8;
-  }
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-  .add-cart-button:active{
-    opacity: 0.5;
-  }
+      <button class="gradient-button">
+        Contact Me
+      </button>
+    </header>
+    
+    <section class="home" id="home">
+  <div class="home-content">
+    <h1>It's a Me, <span>Enrico</span></h1>
 
-  .buy-now-button{
-    background-color: orange;
-    color: black;
-    border: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 27px;
-    padding-right: 27px;
-    margin-right: 5px;
-    border-radius: 20px;
-    transition: 0.15s;
-  }
+    <h3>I'm a <span class="typing">Cyber Security</span></h3>
 
-  .buy-now-button:hover{
-    opacity: 0.8;
-  }
+    <p>
+      I am a Cyber Security student at Binus University. I am passionate about
+      technology and love to learn new things. I am also interested in Blue
+      Team.
+    </p>
 
-  .buy-now-button:active{
-    opacity: 0.5;
-  }
+    <div class="social-icons">
+      <a href="#" class="button">
+        <i class="bx bxl-github"></i>
+      </a>
 
-  .page_link{
-    margin-left: 5px;
-  }
+      <a href="#" class="button">
+        <i class="bx bxl-linkedin-square"></i>
+      </a>
 
-  .page_redge{
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+      <a href="#" class="button">
+        <i class="bx bxl-instagram-alt"></i>
+      </a>
 
-  .stretchy{
-    color: white;
-    background-color: green;
-    border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    transition: padding 1.5s;
-    vertical-align: top;
-  }
+      <a href="cv.pdf" class="button">CV</a>
+    </div>
 
-  .stretchy:hover{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+    <div class="button-group">
+      <a href="#" class="button">Hire</a>
+      <a href="#contact" class="button">Contact</a>
+    </div>
+  </div> <div class="home-img">
+    <img src="image.jpg" alt="A photo of Enrico Patras" />
+  </div>
+</section>
 
-  .shadow{
-    color: white;
-    background-color: green;
-    border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
-    /* transition: margin-top s, margin-left 0.15s; */
-    margin-right: 5px;
-  }
+<section class="about" id="about">
 
-  .shadow:active{
-    margin-top: 3px;
-    margin-left: 3px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-    vertical-align: top;
-  }
+  <div class="about-img">
+    <img src="image.jpg" alt="">
+  </div>
 
-  .number{
-    color: white;
-    background-color: green;
-    border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
-    transition: padding 0.15s, margin 0.15s;
-  }
+  <div class="about-content">
+    <h2>About <span>Me</span></h2>
+    <p>I am Inevitable</p>
+    <a href="#" class="button">Read More</a>
+  </div>
+  
+</section>
 
-  .number:hover{
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
-    vertical-align: top;
-  }
-</style>
+<section class="services" id="services">
 
-<a href="exercise2.html" class="link1">
-  Back to exercise2
-</a>
+  <h2 class="heading">Services</h2>
 
-<p class="heading1">
-  Nike Black Running Shoes
-</p>
+  <div class="services-container">
+    <div class="service-box">
+      <div class="service-info">
+        <i class="bx bx-figma"></i>
+        <h4>Bla Bla</h4>
+        <p>
+          lol
+        </p>
+      </div>
+    </div>
 
-<p class="heading2">
-  $39 - in stock.
-</p>
+    <div class="service-box">
+      <div class="service-info">
+        <i class="bx bx-code"></i>
+        <h4>Bogo bogo</h4>
+        <p>
+          lol
+        </p>
+      </div>
+    </div>
 
-<p>
-  Free delivery tomorrow.
-</p>
+    <div class="service-box">
+      <div class="service-info">
+        <i class="bx bx-code-curly"></i>
+        <h4>Tolol anjay</h4>
+        <p>
+          loop
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<button class="add-cart-button">
-  Add to Cart
-</button>
-
-<button class="buy-now-button">
-  Buy now
-</button>
-
-<br><br>
-
-<button>
-  Back
-</button>
-
-<a href="index.html" class="page_link">
-  1
-</a>
-
-<a href="exercise.html" class="page_link">
-  2
-</a>
-
-<a href="exercise2.html" class="page_link">
-  3
-</a>
-
-<a href="buttons.html" class="page_link">
-  4
-</a>
-
-<a href="lol.html" class="page_redge">
-  5
-</a>
-
-<button>
-  Next
-</button>
-
-  <br><br>
-
-<button class="stretchy">
-  stretch
-</button>
-
-<button class="shadow">
-  shadow
-</button>
-
-<br><br>
-
-<button class="number">
-  one
-</button>
-
-<button class="number">
-  two
-</button>
-
-<button class="number">
-  three
-</button>
+    <script src="script.js"></script>
+  </body>
+</html>
